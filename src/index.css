@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+}
+
+/*Components: Header*/
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 ;
+  
+}
+
+nav{
+  font: sans-serif;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+ul li{
+  list-style-type: none;
+  font-weight: bold;
+  
+  
+}
+
+ul li a{
+  color: black;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+
+ul li a.active,
+ul li a.hover{
+  background: lightcoral;
+}
+
+/*Componets: Main*/
+
+.titolo{
+  padding: 80px 0;
+  height: 15vh;
+  background-color: red;
+}
+.market{
+  height: 15vh;
+  background-color: blue;
+}
+  
+
+
+
