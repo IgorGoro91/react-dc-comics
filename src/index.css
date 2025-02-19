@@ -4,60 +4,77 @@
   box-sizing: border-box;
 }
 
-body{
-  
-}
+
 
 /*Components: Header*/
 
-header{
+.container{
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
+  margin: auto;
   padding: 20px 0 ;
+  
   
 }
 
 nav{
-  font: sans-serif;
+  font-family: sans-serif;
 }
-
+a{
+  color: black;
+  text-decoration: none;
+  
+  
+}
 ul{
+  list-style-type: none;
+}
+header ul{
   display: flex;
   justify-content: center;
+  
+  font-weight: bold;
   gap: 30px;
 }
 
-ul li{
-  list-style-type: none;
-  font-weight: bold;
-  
-  
+header ul li{
+  line-height: 50px;
+}
+ul li.active{
+  color: blue;
+}
+ul li:hover{
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+ul li:active{
+  border-bottom: 3px solid blue;
+  color: grey;
+    
 }
 
-ul li a{
-  color: black;
-  text-decoration: none;
-  transition: background 0.4s;
-}
 
-ul li a.active,
-ul li a.hover{
-  background: lightcoral;
-}
+
+
 
 /*Componets: Main*/
 
 .titolo{
-  padding: 80px 0;
-  height: 15vh;
-  background-color:black;
-  font-size: 30px;
-  color: white;
+    background-color:black;
 }
+.titolo h1{
+  color: white;
+  font-size: 50px;
+  padding: 30px 0;
+}
+
 .market{
   height: 15vh;
   background-color: blue;
+ 
+  
 }
 .market{
   display: flex;
@@ -68,6 +85,7 @@ ul li a.hover{
 .market-top a{
   display: flex;
   align-items: center;
+  
   gap: 20px;
 }
 .market-top img{
@@ -75,27 +93,83 @@ ul li a.hover{
 }
 .market-top h3{
   color: white;
+  font-size: 15px;
 }
 
 
 /*Components: Footer */
+footer .bg-logo{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+footer{
+  color: white;
   
-.background-logo{
-      position: relative;
-      width: 100%;
-      height: 40vh;
-      background-image: url(/public/img/footer-bg.jpg);
-      
-      
+ 
+}
+  
+#topFooter{
+  background: url(/public/img/footer-bg.jpg);
+  
+  background-size: contain;
 }
 
-.background-dc {
-    position: absolute;
-    transform: scale(1.3) rotate(-20deg);
-    
-    left: 50%;
-   
-    width: 500px;
-    
+#topFooter .bg-logo{
+  background: url(/public/img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  
+}
+footer a{
+  color: rgb(168, 159, 159);
+}
+footer li:hover{
+border-bottom: inherit; /*per Togliere le linie sotto il testo, come ho fatto su heard*/
+
+}
+footer ul li{
+  line-height: 160%;
+  font-size: 20px;
+  
+}
+footer .title{
+  font-size: 30px;
+  color: white;
+  
+  
+}
+
+
+#bottomFooter{
+  background-color: #303030;
+}
+#bottomFooter button{
+  border: 2px solid rgb(251, 251, 255);
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#bottomFooter .containerSocial{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 30px 0;
+
+}
+
+.containerSocial .social{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 

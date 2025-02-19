@@ -2,13 +2,16 @@ const Header = () => {
     return(
 
         <header>
+            <div className="container">
+
+            
             <figure>
                 <img src="/img/dc-logo.png" alt="Logo" />
             </figure>
 
             <nav>
                 <ul>
-                    <li><a href="#">CHARACTERS</a></li>
+                    <li className="active"><a href="#">CHARACTERS</a></li>
                     <li><a href="#">COMICS</a></li>
                     <li><a href="#">MOVIES</a></li>
                     <li><a href="#">TV</a></li>
@@ -20,6 +23,8 @@ const Header = () => {
                     <li><a href="#">SHOP</a></li>
                 </ul>
             </nav>
+
+            </div>
 
         </header>
     )

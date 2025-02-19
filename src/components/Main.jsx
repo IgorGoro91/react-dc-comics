@@ -3,11 +3,14 @@ const Main = () =>{
 
         <main>
             <section className="titolo">
-                <h1> Content goes here </h1>
+                <div className="container">
+                    <h1> Content goes here </h1>
+                </div>
+                
             </section>
 
             <section className="market">
-
+            <div className="container">
                 <div className="market-top">
                     <a href="#">
                     <img src="/img/buy-comics-digital-comics.png" alt="" />
@@ -43,6 +46,8 @@ const Main = () =>{
                     </a>
                 </div>
 
+                
+            </div>
             </section>
         </main>
     )
