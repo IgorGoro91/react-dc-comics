@@ -1,32 +1,28 @@
 import Logo from "./Logo"
+import NavBar from "./navBar"
 
-const Header = () => {
+const navLinks = [
+    { id: 1, href: '#', text: 'Characters', current: false },
+    { id: 2, href: '#', text: 'Comics', current: false },
+    { id: 3, href: '#', text: 'Movies', current: false },
+    { id: 4, href: '#', text: 'TV', current: true },
+    { id: 5, href: '#', text: 'Games', current: false },
+    { id: 6, href: '#', text: 'Collectibles', current: false },
+    { id: 7, href: '#', text: 'Videos', current: false },
+    { id: 8, href: '#', text: 'Fans', current: false },
+    { id: 9, href: '#', text: 'News', current: false },
+    { id: 10, href: '#', text: 'Shop', current: false },
+  ]
+
+function Header  (props)  {
     return(
 
         <header>
             <div className="container">
 
             <Logo />
-
-            {/* <figure>
-            <img src="/img/dc-logo.png" alt="Logo" />
             
-            </figure> */}
-
-            <nav>
-                <ul>
-                    <li className="active"><a href="#">CHARACTERS</a></li>
-                    <li><a href="#">COMICS</a></li>
-                    <li><a href="#">MOVIES</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">GAMES</a></li>
-                    <li><a href="#">COLLECTIBLES</a></li>
-                    <li><a href="#">VIDEOS</a></li>
-                    <li><a href="#">FANS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP</a></li>
-                </ul>
-            </nav>
+           <NavBar links={navLinks}/>
 
             </div>
 

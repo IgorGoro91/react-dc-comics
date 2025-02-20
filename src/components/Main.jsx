@@ -1,13 +1,14 @@
+import FumettiComics from "./FumettiComics"
+
 const Main = () =>{
     return(
 
         <main>
-            <section className="titolo">
-                <div className="container">
-                    <h1> Content goes here </h1>
-                </div>
-                
-            </section>
+            
+            <FumettiComics />
+           
+            
+
 
             <section className="market">
             <div className="container">
