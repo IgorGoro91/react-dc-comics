@@ -1,13 +1,17 @@
+import Logo from "./Logo"
+
 const Header = () => {
     return(
 
         <header>
             <div className="container">
 
+            <Logo />
+
+            {/* <figure>
+            <img src="/img/dc-logo.png" alt="Logo" />
             
-            <figure>
-                <img src="/img/dc-logo.png" alt="Logo" />
-            </figure>
+            </figure> */}
 
             <nav>
                 <ul>
