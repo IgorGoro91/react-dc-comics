@@ -114,7 +114,8 @@ ul li:active{
   
 }
 .card img{
-  width: 50%;
+  width: 100%;
+  aspect-ratio: 3/4;
 }
 .card h3{
   color: white;
